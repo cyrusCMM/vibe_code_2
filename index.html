@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">NOVA <span>STORE</span></div>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">🌙 Dark mode</button>
+  </header>
+
+  <main class="container">
+    <div class="intro fade-in">
+      <p class="eyebrow">CURATED FOR YOU</p>
+      <h1>Discover your next favorite.</h1>
+      <p class="subtitle">Thoughtful essentials for everyday living.</p>
+    </div>
+
+    <section class="product-grid" aria-label="Featured products">
+      <article class="product-card fade-in" style="--delay: 0.1s">
+        <div class="product-visual visual-headphones"><span role="img" aria-label="Headphones">🎧</span></div>
+        <div class="product-info"><span class="category">AUDIO</span><h2>Wireless Headphones</h2><p>Clear sound, all-day comfort.</p><div class="card-bottom"><strong>KSh 4,500</strong><button class="view-button" type="button" data-product="Wireless Headphones">View details →</button></div></div>
+      </article>
+      <article class="product-card fade-in" style="--delay: 0.25s">
+        <div class="product-visual visual-watch"><span role="img" aria-label="Watch">⌚</span></div>
+        <div class="product-info"><span class="category">ACCESSORIES</span><h2>Classic Smartwatch</h2><p>Smart features, timeless style.</p><div class="card-bottom"><strong>KSh 6,800</strong><button class="view-button" type="button" data-product="Classic Smartwatch">View details →</button></div></div>
+      </article>
+      <article class="product-card fade-in" style="--delay: 0.4s">
+        <div class="product-visual visual-bag"><span role="img" aria-label="Backpack">🎒</span></div>
+        <div class="product-info"><span class="category">EVERYDAY</span><h2>Urban Backpack</h2><p>Carry more, worry less.</p><div class="card-bottom"><strong>KSh 3,200</strong><button class="view-button" type="button" data-product="Urban Backpack">View details →</button></div></div>
+      </article>
+    </section>
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+  </main>
+  <footer>© 2026 Nova Store · Made with HTML, CSS & JavaScript</footer>
+</body>
+</html>
